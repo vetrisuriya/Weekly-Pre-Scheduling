@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+    padding: 15px;
+    background: #c5e0b3;
+}
+header nav ul {
+    display: flex;
+    column-gap: 20px;
+    list-style: none;
+}
+
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main table {
+    width: 100%;
+    height: auto;
+    border-spacing: 0;
+    font-size: 16px;
+    font-family: system-ui;
+    font-weight: 500;
+}
+main table * {
+    border: 1px solid black;
+    padding: 5px;
+}
+main table thead, main table tbody tr td.team-members, main table tfoot tr td:first-child {
+    text-align: center;
+}
+main table tr.blue {
+    background-color: #bcd6ef;
+}
+main table tr.green {
+    background-color: #c5e0b3;
+}
+main table thead, main table tfoot {
+    font-weight: 700;
+}
+main table tbody tr:not(.green) td:not(:first-child, :last-child) span {
+    padding: 2px;
+}
+
+.msg {
+    margin: 0px;
+    text-align: center;
+    background: indianred;
+    padding: 10px;
+    color: white;
+}
+
+/* dashboard */
+main .table-dashboard {
+    width: 80%;
+    margin: 30px auto 50px;
+}
+
+/* employee */
+main .form {
+    width: 25%;
+    padding: 30px 20px 20px 20px;
+}
+main .form form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+main .table-employee, main .table-team {
+    width: 50%;
+    padding: 30px 20px 20px 20px;
+}
+main .table-employee table a, main .table-team table a {
+    border: 0;
+}
+input[type="text"], input[type="date"], select {
+    padding: 5px 10px;
+    margin-top: 5px;
+    width: 100%;
+}
+input[type="submit"] {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.red-badge {
+    color: red;
+    background: black;
+    padding: 0px 5px;
+}
